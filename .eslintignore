@@ -1,0 +1,9 @@
+*.config.js
+*.config.ts
+*.test.js
+*.test.ts
+cjs
+esm
+umd
+dist
+types
