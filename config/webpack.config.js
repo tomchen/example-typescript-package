@@ -4,7 +4,7 @@ module.exports = {
   mode: 'production',
   entry: './src/index.ts',
   output: {
-    path: path.resolve(__dirname, '../umd'),
+    path: path.resolve(__dirname, '../dist/umd'),
     filename: 'index.js',
     library: 'exampleTypescriptPackage',
     libraryTarget: 'umd',

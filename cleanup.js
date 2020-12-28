@@ -20,10 +20,10 @@ const deleteFolderRecursive = (path) => {
 const folder = process.argv.slice(2)[0]
 
 if (folder) {
-  deleteFolderRecursive(folder)
+  deleteFolderRecursive(Path.join('dist', folder))
 } else {
-  deleteFolderRecursive('cjs')
-  deleteFolderRecursive('esm')
-  deleteFolderRecursive('umd')
-  deleteFolderRecursive('types')
+  deleteFolderRecursive('dist/cjs')
+  deleteFolderRecursive('dist/esm')
+  deleteFolderRecursive('dist/umd')
+  deleteFolderRecursive('dist/types')
 }

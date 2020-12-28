@@ -1,8 +1,7 @@
-cjs
-esm
-umd
-# dist
-types
+dist/cjs
+dist/esm
+dist/umd
+dist/types
 
 
 # Logs
