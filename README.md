@@ -113,8 +113,6 @@ If you use 2FA, then make sure it's enabled for **authorization** only instead o
 
 On the page of your newly created or existing GitHub repo, click **Settings** -> **Secrets** -> **New repository secret**, the **Name** should be `NPM_TOKEN` and the **Value** should be your npm token.
 
-When you publish a brand new package, you may encounter some issue https://github.com/npm/cli/issues/1637
-
 ## Notes
 
 - It uses npm but you can easily switch to yarn, of course (remember to change all "npm" in `scripts` in the file **package.json**)
