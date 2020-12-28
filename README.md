@@ -87,13 +87,33 @@ npm uninstall example-typescript-package -g
 
 ### Publish
 
+Create an [npm](https://www.npmjs.com/) account.
+
 #### Manual Publishing
 
-...
+Log in:
+
+```bash
+npm adduser
+```
+
+And publish:
+
+```bash
+npm publish
+```
 
 #### CI Publishing
 
-...
+This package is configured to use GitHub Actions CI/CD to automate the npm publishing process. The following are what you have to do.
+
+Follow [npm's official instruction](https://docs.npmjs.com/creating-and-viewing-access-tokens) to create an npm token. Choose "Publish" from the website, or use `npm token create` without argument with the CLI.
+
+If you use 2FA, then make sure it's enabled for **authorization** only instead of **authorization and publishing** (**Edit Profile** -> **Modify 2FA**).
+
+On the page of your newly created or existing GitHub repo, click **Settings** -> **Secrets** -> **New repository secret**, the **Name** should be `NPM_TOKEN` and the **Value** should be your npm token.
+
+When you publish a brand new package, you may encounter some issue https://github.com/npm/cli/issues/1637
 
 ## Notes
 
