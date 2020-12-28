@@ -1,14 +1,22 @@
 # Example TypeScript Package ready to be published on npm for 2021
 
-[![npm package](https://img.shields.io/badge/npm%20i-example--typescript--package-brightgreen)](https://www.npmjs.com/package/example-typescript-package) [![version number](<![npm](https://img.shields.io/npm/v/example-typescript-package?color=green&label=version)>)](https://github.com/tomchen/example-typescript-package/releases) [![Actions Status](https://github.com/tomchen/example-typescript-package/workflows/Test/badge.svg)](https://github.com/tomchen/example-typescript-package/actions) [![License](https://img.shields.io/github/license/tomchen/example-typescript-package)](https://github.com/tomchen/example-typescript-package/blob/master/LICENSE)
+This is an example TypeScript Package ready to be published on npm. It has been set up with automated tests and package publishing workflow using GitHub Actions CI/CD. It is made primarily for GitHub<a href="https://github.com/" title="Github"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/github-icon.svg" alt="Github" width="21px" height="21px"></a> + VS Code<a href="https://code.visualstudio.com/" title="Visual Studio Code"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/visual-studio-code.svg" alt="Visual Studio Code" width="21px" height="21px"></a> (Windows<a href="https://www.microsoft.com/windows" title="Windows"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/microsoft-windows.svg" alt="Windows" width="21px" height="21px"></a> / Mac<a href="https://www.apple.com/macos/" title="Mac OS"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/macOS.svg" alt="Mac OS" width="21px" height="21px"></a> / Linux<a href="https://www.linuxfoundation.org/" title="Linux"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/linux-tux.svg" alt="Linux" width="21px" height="21px"></a>) users who are about to write and publish their first TypeScript npm package. This package could serve as a starter / boilerplate / demo for them.
 
-This is an example TypeScript Package ready to be published on npm. It has been set up with automated tests and package publishing workflow using GitHub Actions CI/CD. It is made primarily for GitHub<a href="https://github.com/" title="Github"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/github-icon.svg" alt="Github" width="21px" height="21px"></a> + VS Code<a href="https://code.visualstudio.com/" title="Visual Studio Code"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/visual-studio-code.svg" alt="Visual Studio Code" width="21px" height="21px"></a> (Windows<a href="https://www.microsoft.com/windows" title="Windows"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/microsoft-windows.svg" alt="Windows" width="21px" height="21px"></a> / Mac<a href="https://www.apple.com/macos/" title="Mac OS"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/macOS.svg" alt="Mac OS" width="21px" height="21px"></a> / Linux<a href="https://www.linuxfoundation.org/" title="Linux"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/linux-tux.svg" alt="Linux" width="21px" height="21px"></a>) users who are about to write and publish their first TypeScript npm package. This package could serve as a starter / boilerplate / demo for them.
+[![npm package](https://img.shields.io/badge/npm%20i-example--typescript--package-brightgreen)](https://www.npmjs.com/package/example-typescript-package) [![version number](https://img.shields.io/npm/v/example-typescript-package?color=green&label=version)](https://github.com/tomchen/example-typescript-package/releases) [![Actions Status](https://github.com/tomchen/example-typescript-package/workflows/Test/badge.svg)](https://github.com/tomchen/example-typescript-package/actions) [![License](https://img.shields.io/github/license/tomchen/example-typescript-package)](https://github.com/tomchen/example-typescript-package/blob/master/LICENSE)
 
-It uses npm<a href="https://www.npmjs.com/" title="npm"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/npm.svg" alt="npm" width="21px" height="21px"></a>, TypeScript compiler<a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/typescript-icon.svg" alt="Typescript" width="21px" height="21px"></a>, Jest<a href="https://jestjs.io/" title="Jest"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/jest.svg" alt="Jest" width="21px" height="21px"></a>, webpack<a href="https://webpack.js.org/" title="webpack"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/webpack.svg" alt="webpack" width="21px" height="21px"></a>, ESLint<a href="https://eslint.org/" title="ESLint"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/eslint.svg" alt="ESLint" width="21px" height="21px"></a>, Prettier<a href="https://prettier.io/" title="Prettier"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/prettier.svg" alt="Prettier" width="21px" height="21px"></a>.
-
-The production files include CommonJS, ES Modules, UMD version and TypeScript declaration files.
+It uses npm<a href="https://www.npmjs.com/" title="npm"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/npm.svg" alt="npm" width="21px" height="21px"></a>, TypeScript compiler<a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/typescript-icon.svg" alt="Typescript" width="21px" height="21px"></a>, Jest<a href="https://jestjs.io/" title="Jest"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/jest.svg" alt="Jest" width="21px" height="21px"></a>, webpack<a href="https://webpack.js.org/" title="webpack"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/webpack.svg" alt="webpack" width="21px" height="21px"></a>, ESLint<a href="https://eslint.org/" title="ESLint"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/eslint.svg" alt="ESLint" width="21px" height="21px"></a>, Prettier<a href="https://prettier.io/" title="Prettier"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/prettier.svg" alt="Prettier" width="21px" height="21px"></a>. The production files include CommonJS, ES Modules, UMD version and TypeScript declaration files.
 
 ## Development
+
+### Use as a template
+
+[![Use the template](https://img.shields.io/static/v1?label=&message=Click%20here%20to%20use%20this%20package%20as%20a%20template%20to%20start%20a%20new%20repo%20on%20GitHub&color=brightgreen&style=for-the-badge)](https://github.com/tomchen/example-typescript-package/generate)
+
+(Click the above button to use this example package as a template for your new GitHub repo, this will initialize a new repository and my commits will not be in your git history)
+
+(If you do not use GitHub, you can [download the archive of the example package](https://github.com/tomchen/example-typescript-package/archive/main.zip))
+
+### Set up tools and environment
 
 You need to have [Node.js](https://nodejs.org/en/download/) installed. Node includes npm as its default package manager.
 
@@ -85,11 +93,13 @@ Whenever you want to uninstall the globally-installed example-typescript-package
 npm uninstall example-typescript-package -g
 ```
 
-### Publish
+### Prepare to publish
 
 Create an [npm](https://www.npmjs.com/) account.
 
-#### Manual Publishing
+<details><summary><strong>Click to read this section if you do manual publishing</strong></summary>
+
+#### Manual publishing to npm
 
 Log in:
 
@@ -103,9 +113,11 @@ And publish:
 npm publish
 ```
 
-#### CI Publishing
+</details>
 
-This package is configured to use GitHub Actions CI/CD to automate the npm publishing process. The following are what you have to do.
+This package is configured to use GitHub Actions CI/CD to automate both the **npm** and **GitHub Packages** publishing process. The following are what you have to do.
+
+#### CI publishing to npm
 
 Follow [npm's official instruction](https://docs.npmjs.com/creating-and-viewing-access-tokens) to create an npm token. Choose "Publish" from the website, or use `npm token create` without argument with the CLI.
 
@@ -113,12 +125,35 @@ If you use 2FA, then make sure it's enabled for **authorization** only instead o
 
 On the page of your newly created or existing GitHub repo, click **Settings** -> **Secrets** -> **New repository secret**, the **Name** should be `NPM_TOKEN` and the **Value** should be your npm token.
 
+#### CI publishing to GitHub Packages
+
+The default configuration of this example package **assumes you publish package with an unscoped name to npm**. GitHub Packages must be named with a scope name such as "@tomchen/example-typescript-package".
+
+Change `scope: '@tomchen'` to your own scope in **.github/workflows/test.yml**, also change `addscope` in **package.json**.
+
+If you publish package with a scoped name to npm, change the name to something like "@tomchen/example-typescript-package" in **package.json**, and remove the `- run: npm run addscope` line in **.github/workflows/test.yml**
+
+If you publish your package to npm only, and don't want to publish to GitHub Packages, then delete the lines from `- name: Setup .npmrc file to publish to GitHub Packages` to the end of the file in **.github/workflows/test.yml**.
+
+(You might have noticed `secret.GITHUB_TOKEN` in **.github/workflows/test.yml**. You don't need to set up a secret named `GITHUB_TOKEN` actually, it is [automatically created](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#about-the-github_token-secret))
+
+### Publish
+
+Now everything is set. The example package has automated tests and upload (publishing) already set up with GitHub Actions:
+
+- Every time you `git push` your `master` or `main` branch, the package is automatically tested against the desired OS and Node.js versions with GitHub Actions.
+- Every time a new release (either the initial version or an updated version) is created, the latest version of the package is automatically published to npm and/or GitHub Packages registry with GitHub Actions.
+
+Apparently, you have to change the version number in order to publish a new version to the registries. You can unpublish a version or the whole package but can never re-publish the same version under the same name.
+
+If you want to modify the description / README on the npm package page, you have to publish a new version.
+
 ## Notes
 
 - It uses npm but you can easily switch to yarn, of course (remember to change all "npm" in `scripts` in the file **package.json**)
   - Whether you use npm as your package manager ≠ Whether you can publish to the npm registry
 - Works fine in VS Code. In my configuration **.eslintrc** and **.prettierrc** cooperate perfectly
-- See `scripts`.`build` in **package.json** for other predefined script commands
+- See `scripts` in **package.json** for other predefined script commands
 
 ## References
 
