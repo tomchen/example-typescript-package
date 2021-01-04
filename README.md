@@ -150,7 +150,7 @@ Now everything is set. The example package has automated tests and upload (publi
 
 Apparently, you have to change the version number in order to publish a new version to the registries. You can unpublish a version or the whole package but can never re-publish the same version under the same name.
 
-If you want to modify the description / README on the npm package page, you have to publish a new version. The same goes for GitHub Packages.
+If you want to modify the description / README on the npm package page, you have to publish a new version. You can modify the description on GitHub Packages without publishing.
 
 ## Notes
 
