@@ -145,7 +145,7 @@ If you publish your package to npm only, and don't want to publish to GitHub Pac
 
 Now everything is set. The example package has automated tests and upload (publishing) already set up with GitHub Actions:
 
-- Every time you `git push` your `master` or `main` branch, the package is automatically tested against the desired OS and Node.js versions with GitHub Actions.
+- Every time you `git push` or a pull request is submitted on your `master` or `main` branch, the package is automatically tested against the desired OS and Node.js versions with GitHub Actions.
 - Every time a new release (either the initial version or an updated version) is created, the latest version of the package is automatically published to npm and/or GitHub Packages registry with GitHub Actions.
 
 Apparently, you have to change the version number in order to publish a new version to the registries. You can unpublish a version or the whole package but can never re-publish the same version under the same name.
