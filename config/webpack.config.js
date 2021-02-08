@@ -8,6 +8,7 @@ module.exports = {
     filename: 'index.js',
     library: 'exampleTypescriptPackage',
     libraryTarget: 'umd',
+    globalObject: 'this',
   },
   module: {
     rules: [

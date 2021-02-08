@@ -16,7 +16,7 @@
     "package": "npm run build && npm pack",
     "test": "jest",
     "test:cov": "jest --coverage",
-    "addscope": "node tools/packagejson name @tomchen/example-typescript-package && prettier --write package.json"
+    "addscope": "node tools/packagejson name @tomchen/example-typescript-package"
   },
   "publishConfig": {
     "access": "public"

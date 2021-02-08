@@ -15,12 +15,11 @@ for (let i = 0, l = args.length; i < l; i++) {
 
 fs.writeFile(
   Path.join(__dirname, fileName),
-  JSON.stringify(file),
-  function writeJSON(err) {
+  JSON.stringify(file, null, 2),
+  (err) => {
     if (err) {
       return console.log(err)
     }
-    console.log(JSON.stringify(file))
     console.log('Writing to ' + fileName)
   }
 )

@@ -2,7 +2,4 @@
 *.config.ts
 *.test.js
 *.test.ts
-dist/cjs
-dist/esm
-dist/umd
-dist/types
+dist
