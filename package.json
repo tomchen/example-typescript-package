@@ -15,8 +15,8 @@
     "build:types": "node tools/cleanup types && tsc -p config/tsconfig.types.json",
     "clean": "node tools/cleanup",
     "package": "npm run build && npm pack",
-    "test": "jest",
-    "test:cov": "jest --coverage",
+    "test": "jest --no-cache --runInBand",
+    "test:cov": "jest --coverage --no-cache --runInBand",
     "addscope": "node tools/packagejson name @tomchen/example-typescript-package"
   },
   "publishConfig": {
@@ -50,6 +50,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",

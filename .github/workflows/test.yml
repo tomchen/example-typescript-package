@@ -2,10 +2,20 @@ name: Test
 
 on:
   push:
+    paths-ignore:
+      - 'docs/**'
+      - 'README.md'
+      - 'LICENSE'
+      - '.editorconfig'
     branches:
       - main
       - master
   pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - 'README.md'
+      - 'LICENSE'
+      - '.editorconfig'
     branches:
       - main
       - master
