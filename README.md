@@ -4,7 +4,7 @@ This is an example TypeScript Package ready to be published on npm. It has been 
 
 [![npm package](https://img.shields.io/badge/npm%20i-example--typescript--package-brightgreen)](https://www.npmjs.com/package/example-typescript-package) [![version number](https://img.shields.io/npm/v/example-typescript-package?color=green&label=version)](https://github.com/tomchen/example-typescript-package/releases) [![Actions Status](https://github.com/tomchen/example-typescript-package/workflows/Test/badge.svg)](https://github.com/tomchen/example-typescript-package/actions) [![License](https://img.shields.io/github/license/tomchen/example-typescript-package)](https://github.com/tomchen/example-typescript-package/blob/main/LICENSE)
 
-It uses npm, TypeScript compiler, Jest, webpack, ESLint, Prettier. The production files include CommonJS, ES Modules, UMD version and TypeScript declaration files.
+It uses npm, TypeScript compiler, Jest, webpack, ESLint, Prettier, husky, commitlint. The production files include CommonJS, ES Modules, UMD version and TypeScript declaration files.
 
 <p align="center">
 <a href="https://github.com/" title="Github"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/github-icon.svg" alt="Github" width="21px" height="21px"></a> <a href="https://code.visualstudio.com/" title="Visual Studio Code"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/visual-studio-code.svg" alt="Visual Studio Code" width="21px" height="21px"></a> <a href="https://www.microsoft.com/windows" title="Windows"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/microsoft-windows.svg" alt="Windows" width="21px" height="21px"></a> <a href="https://www.apple.com/macos/" title="Mac OS"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/macOS.svg" alt="Mac OS" width="21px" height="21px"></a> <a href="https://www.linuxfoundation.org/" title="Linux"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/linux-tux.svg" alt="Linux" width="21px" height="21px"></a> <a href="https://www.npmjs.com/" title="npm"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/npm.svg" alt="npm" width="21px" height="21px"></a> <a href="https://www.typescriptlang.org/" title="Typescript"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/typescript-icon.svg" alt="Typescript" width="21px" height="21px"></a> <a href="https://jestjs.io/" title="Jest"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/jest.svg" alt="Jest" width="21px" height="21px"></a> <a href="https://webpack.js.org/" title="webpack"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/webpack.svg" alt="webpack" width="21px" height="21px"></a> <a href="https://eslint.org/" title="ESLint"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/eslint.svg" alt="ESLint" width="21px" height="21px"></a> <a href="https://prettier.io/" title="Prettier"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/prettier.svg" alt="Prettier" width="21px" height="21px"></a> <a href="https://yarnpkg.com/" title="yarn"><img src="https://github.com/tomchen/stack-icons/raw/master/logos/yarn.svg" alt="yarn" width="21px" height="21px"></a>
@@ -53,6 +53,8 @@ Test your code with Jest framework:
 ```bash
 npm run test
 ```
+
+**Note:** Example TypeScript Package uses [husky](https://typicode.github.io/husky/) and [commitlint](https://commitlint.js.org/) to automatically execute test and [lint commit message](https://www.conventionalcommits.org/) before every commit.
 
 ### Build
 
@@ -146,9 +148,11 @@ If you publish your package to npm only, and don't want to publish to GitHub Pac
 Now everything is set. The example package has automated tests and upload (publishing) already set up with GitHub Actions:
 
 - Every time you `git push` or a pull request is submitted on your `master` or `main` branch, the package is automatically tested against the desired OS and Node.js versions with GitHub Actions.
-- Every time a new release (either the initial version or an updated version) is created, the latest version of the package is automatically published to npm and/or GitHub Packages registry with GitHub Actions.
+- Every time an [**annotated**](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_annotated_tags) (not [lightweight](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_lightweight_tags)) "v*" tag is pushed onto GitHub, a GitHub release is automatically generated from this version, it also automatically publishes to the npm registry and/or GitHub Packages registry to update the package there.
+  - [`npm version`](https://docs.npmjs.com/cli/v6/commands/npm-version) / [`yarn version`](https://yarnpkg.com/cli/version) is useful to create tags.
+  - You could also add `"postversion": "git push --follow-tags"` to **package.json** file to push it automatically after `npm` or `yarn` `version`. (for `yarn version` only: because `yarn version` doesn't check whether there are uncommitted changes, you can add `"preversion": "git diff-index --quiet HEAD --"` to **package.json**)
 
-Apparently, you have to change the version number in order to publish a new version to the registries. You can unpublish a version or the whole package but can never re-publish the same version under the same name.
+For npm registry: you can unpublish a version or the whole package but can never re-publish the same version under the same name.
 
 If you want to modify the description / README on the npm package page, you have to publish a new version. You can modify the description on GitHub Packages without publishing.
 
