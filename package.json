@@ -8,6 +8,8 @@
   "types": "dist/types/index.d.js",
   "scripts": {
     "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
     "build": "npm run build:cjs && npm run build:esm && npm run build:umd && npm run build:types",
     "build:cjs": "node tools/cleanup cjs && tsc -p config/tsconfig.cjs.json",
     "build:esm": "node tools/cleanup esm && tsc -p config/tsconfig.esm.json",
@@ -60,6 +62,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",
     "jest": "^27.2.0",
+    "pinst": "^2.1.6",
     "prettier": "^2.4.0",
     "ts-jest": "^27.0.5",
     "ts-loader": "^9.2.5",
